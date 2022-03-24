@@ -2,8 +2,8 @@ import React from 'react';
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import ThemePark from './ThemePark'
-import RollerCoaster from './RollerCoaster'
+import ThemePark from '../components/ThemePark'
+import RollerCoaster from '../components/RollerCoaster'
 
 
 

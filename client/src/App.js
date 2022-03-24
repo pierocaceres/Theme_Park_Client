@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import TPData from './data/themeParkData'
 import RCData from './data/rollerCoasterData'
+import ThemeParkPage from './pages/ThemeParkPage';
 
 function App() {
   const [themeParks, setThemeParks] = useState([])
@@ -42,7 +43,7 @@ function App() {
         <main>
          <Routes>
           <Route exact path="/" element={<Home themeParks={themeParks} rollerCoasters={rollerCoasters} />}/>
-          <Route exact path="/themeparks/:name"  />
+          <Route exact path="/themeparks/:name" element={ <ThemeParkPage themeParks = {themeParks} />}  />
           <Route exact path="/rollercoasters/:name"  />
         </Routes> 
        

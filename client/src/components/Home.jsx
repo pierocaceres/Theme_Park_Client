@@ -25,10 +25,15 @@ function Home(props) {
                 </div>
             </div>
             <div className='Roller-Coaster'>
-                    <h2>Roller Coaster</h2>
-                    <div className="container-grid">
-
-                    </div>
+                <h2>Roller Coaster</h2>
+                <div className="container-grid">
+                   {props.rollerCoasters.map((rollerCoaster) => (
+                       <RollerCoaster 
+                            image={rollerCoaster.image}
+                            name={rollerCoaster.name}
+                       />
+                   ))}
+                </div>
             </div>         
         </div>
     );

@@ -24,6 +24,7 @@ function App() {
   const getRollerCoaster = async () => {
     // const result = await axios.get()
     // setRollerCoaster(result)//Look at result path
+    setRollerCoaster(RCData)
   }
 
   useEffect( () => {
@@ -40,7 +41,7 @@ function App() {
 
         <main>
          <Routes>
-          <Route exact path="/" element={<Home themeParks={themeParks}/>}/>
+          <Route exact path="/" element={<Home themeParks={themeParks} rollerCoasters={rollerCoasters} />}/>
           <Route exact path="/themeparks" element={<ThemePark />} />
           <Route exact path="/rollercoasters" element={<RollerCoaster />} />
         </Routes> 

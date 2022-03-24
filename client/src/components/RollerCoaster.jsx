@@ -6,30 +6,15 @@ const RollerCoaster = (props) => {
     console.log(props)
 
     return (
-        <div className="coasterInfo">
-          
-    RollerCoaster
-
-        </div>
+        <div className="card">
+                 <div className="card game-card" onClick={props.onClick}> 
+                    <div className="image-wrapper">
+                        <img src={props.image} alt="Roller Coaster"/>
+                    </div>
+                 <h1>{props.name}</h1>
+                 </div>   
+          </div>
     )
-
-
 }
 
 export default RollerCoaster;
-
-{
-    // name = {props.name}
-    // description =
-{/* {rollerCoasters.map((rollerCoaster) => (
-            <RollerCoaster key={rollerCoaster.id}
-            name={rollerCoaster.name}
-            description={rollerCoaster.description}
-            min_height={rollerCoaster.min_height}
-            max_speed={rollerCoaster.max_speed}
-            length={rollerCoaster.length}
-            type={rollerCoaster.type}
-            location={rollerCoaster.id} //Grab the name of the from ThemePark }
-            />
-))} */}
-}

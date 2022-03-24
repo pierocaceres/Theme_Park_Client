@@ -5,8 +5,6 @@ import axios from 'axios'
 import ThemePark from '../components/ThemePark'
 import RollerCoaster from '../components/RollerCoaster'
 
-
-
 function Home(props) {
     let navigate = useNavigate()
 
@@ -20,6 +18,7 @@ function Home(props) {
                         <ThemePark 
                             image={themePark.image}
                             name={themePark.name}
+                            onClick={() => navigate(`/themeparks/${themePark.name}`)}
                         />
                     ))}
                 </div>

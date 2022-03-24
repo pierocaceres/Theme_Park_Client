@@ -5,15 +5,15 @@ export default function ThemePark(props) {
         <ThemePark key ={ThemePark.id}> 
            <div className="card">
                  <div className="card game-card" onClick={props.onClick}> </div>
-                 <img src = {props.image} />
+                 <img src={props.image} />
                  <h1>{props.name}</h1>
-                 <p>Description </p>
           </div>
         </ThemePark>
       )
+}
 
 
-{/* <div className='Theme-Park'>
+/* <div className='Theme-Park'>
                 <h2>Theme Parks</h2>
                 {themeParks.map((themePark) => (
                     <ThemePark key={themePark.id}
@@ -23,7 +23,7 @@ export default function ThemePark(props) {
                         image={themePark.image}
                     />
                 ))} 
-            </div> */}
+            </div> */
 
 
 
@@ -31,5 +31,4 @@ export default function ThemePark(props) {
 // <h1>{props.themeParks.name}</h3>
 // <h3>{props.themeParks.location</h3>
 // <p>{props.themeParks.description}</p>
-{/* <img src={props.ThemeParks.image}> </img> */}
-
+/* <img src={props.ThemeParks.image}> </img> */

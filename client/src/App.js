@@ -34,6 +34,7 @@ function App() {
        <header>
         <Navigation />
       </header>
+
         <main>
          <Routes>
           <Route exact path="/" element={<Home />}/>
@@ -44,6 +45,7 @@ function App() {
       </main>   
 
     
+
     </div>
   );
 }

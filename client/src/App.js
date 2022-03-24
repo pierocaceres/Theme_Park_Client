@@ -1,7 +1,7 @@
 import './style/App.css';
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import Navigation from './components/Navigation'
-import Home from './components/Home'
+import Home from './pages/Home'
 import ThemePark from './components/ThemePark'
 import RollerCoaster from './components/RollerCoaster';
 import { useEffect, useState } from 'react';
@@ -16,7 +16,7 @@ function App() {
   let navigate = useNavigate()
 
   const getThemePark = async () => {
-    // const result = await axios.get() 
+    // const result = await axios.get()
     // setThemeParks(result)   
     setThemeParks(TPData)
   }
@@ -42,8 +42,8 @@ function App() {
         <main>
          <Routes>
           <Route exact path="/" element={<Home themeParks={themeParks} rollerCoasters={rollerCoasters} />}/>
-          <Route exact path="/themeparks" element={<ThemePark />} />
-          <Route exact path="/rollercoasters" element={<RollerCoaster />} />
+          <Route exact path="/themeparks/:name"  />
+          <Route exact path="/rollercoasters/:name"  />
         </Routes> 
        
       </main>   

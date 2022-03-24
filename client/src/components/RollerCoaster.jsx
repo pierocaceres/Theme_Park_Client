@@ -3,7 +3,6 @@ import React from "react";
 
 const RollerCoaster = (props) => {
 
-    console.log(props)
 
     return (
         <div className="card">

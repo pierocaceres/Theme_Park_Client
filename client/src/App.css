@@ -26,6 +26,18 @@
   background-color: #62e979;
   cursor: pointer;
   transition: all 0.2s;
+  background-color: #3a3333;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: white;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+.card .img-wrapper {
+  width: auto;
 }
 
 .card img {

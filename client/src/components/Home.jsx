@@ -1,14 +1,14 @@
 import React from 'react';
 import { useState, useEffect } from 'react'
-import { useNavigation } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import ThemePark from './ThemePark'
+//import ThemePark from './ThemePark'
 
 function Home(props) {
     const [themeParks, setThemeParks] = useState([])
     const [rollerCoaster, setRollerCoaster] = useState([])
     
-    let navigate = useNavigation()
+    let navigate = useNavigate()
 
     const getThemePark = async () => {
         const result = await axios.get() 

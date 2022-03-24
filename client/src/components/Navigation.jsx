@@ -8,8 +8,8 @@ const Navigation = () => {
             <h1> Disney Parks </h1>
             <div>
                 <Link to="/"> Home </Link>
-                <Link to="/parks"> Parks </Link>
-                <Link to="/coasters"> Coasters </Link>
+                <Link to="/themeparks"> Parks </Link>
+                <Link to="/rollercoasters"> Coasters </Link>
             </div>    
         </nav>
     );

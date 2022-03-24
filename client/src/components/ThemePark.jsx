@@ -24,6 +24,17 @@ export default function ThemePark(props) {
       )
 }
 
+{/* <div className='Theme-Park'>
+                <h2>Theme Parks</h2>
+                {themeParks.map((themePark) => (
+                    <ThemePark key={themePark.id}
+                        name={themePark.name}
+                        description={themePark.description}
+                        location={themePark.location}
+                        image={themePark.image}
+                    />
+                ))} 
+            </div> */}
 
 
 

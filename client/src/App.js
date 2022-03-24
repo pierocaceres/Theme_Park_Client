@@ -13,7 +13,9 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />}/>
-          <Route path="/themepark" element={<ThemePark />} />
+          {/* <Route path="/themepark" element={<ThemePark />} /> */}
+          <Route path="/themepark/:parkName" />
+          <Route path="/roller-coaster/:coasterName" />
         </Routes>
       </main>
     </div>

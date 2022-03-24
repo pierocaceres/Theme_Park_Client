@@ -2,8 +2,10 @@ import React from 'react';
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-//import ThemePark from './ThemePark'
+import ThemePark from './ThemePark'
 //import RollerCoaster from './RollerCoaster'
+import TPData from '../data/themeParkData'
+import RCData from '../data/rollerCoasterData'
 
 function Home(props) {
     const [themeParks, setThemeParks] = useState([])
@@ -12,8 +14,9 @@ function Home(props) {
     let navigate = useNavigate()
 
     const getThemePark = async () => {
-        const result = await axios.get() 
-        setThemeParks(result)   
+        // const result = await axios.get() 
+        // setThemeParks(result)   
+        setThemeParks(TPData)
     }
 
     const getRollerCoaster = async () => {
@@ -26,18 +29,21 @@ function Home(props) {
         getRollerCoaster()
     }, [])
 
+    themeParks.forEach((themePark) => console.log(themePark))
     return (
         <div>
             <div className='Theme-Park'>
                 <h2>Theme Parks</h2>
-                {/* {themeParks.map((themePark) => (
+                <div className='container-grid'>
+                    {themeParks.map((themePark) => (
                     <ThemePark key={themePark.id}
                         name={themePark.name}
-                        description={themePark.description}
-                        location={themePark.location}
                         image={themePark.image}
+                        onClick={() => navigate(`/parks/${themePark.name}`)}
                     />
-                ))} */}
+                    
+                     ))}
+                </div>
             </div>
             <div className='Roller-Coaster'>
                 <h2>Roller Coaster</h2>
@@ -51,6 +57,7 @@ function Home(props) {
                         length={rollerCoaster.length}
                         type={rollerCoaster.type}
                         location={rollerCoaster.id} //Grab the name of the from ThemePark }
+                        onClick={() => navigate(`/roller-coaster/${rollerCoaster.name}`)}
                         />
                     ))} */}
                 </div>

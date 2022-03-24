@@ -14,7 +14,7 @@ let info = [
 
 
 
-export default function ThemePark() {
+export default function ThemePark(props) {
     return (
         <div className="card">
             <img src={info[0].url} />

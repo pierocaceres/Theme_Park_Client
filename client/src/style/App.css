@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,9 +18,6 @@
   max-height: 380px;
   border-radius: 4px;
   background-color: #62e979;
-  cursor: pointer;
-  transition: all 0.2s;
-  background-color: #3a3333;
   cursor: pointer;
   transition: all 0.2s;
   color: white;

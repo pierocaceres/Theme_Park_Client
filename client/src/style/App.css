@@ -1,3 +1,15 @@
+
+.link-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: rgb(0, 0, 0); 
+  height: 60px;
+
+  transition: all 0.6s ease-in-out;
+  border-radius: 50px;
+    
+}
 header nav a {
   margin: 0 1em;
 }
@@ -17,14 +29,27 @@ header nav a {
   color: white;
 }
 
-.card {
-  max-width: 300px;
+.coaster-card {
+  max-width: 650px;
   max-height: 380px;
   border-radius: 4px;
-  background-color: #62e979;
+  background-color: #413d3d;
   cursor: pointer;
   transition: all 0.2s;
   color: white;
+  transition: all 0.6s ease-in-out;
+
+}
+
+.theme-card {
+  max-width: 650px;
+  max-height: 380px;
+  border-radius: 4px;
+  background-color: #413d3d;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: white;
+  transition: all 0.6s ease-in-out;
 }
 
 .card:hover {
@@ -44,7 +69,7 @@ header nav a {
   padding: 2em 0;
   display: grid;
   /* grid-template-columns: repeat(auto-fill, 320px); */
-  grid-template-columns: repeat(4, 320px);
+  grid-template-columns: repeat(2, 550px);
   grid-gap: 1em;
   justify-content: center;
 }
@@ -56,11 +81,20 @@ header nav a {
 
 .info-picture img{
   /* width: 100%; */
-  max-height: 400px;
+  max-height: 450px;
 }
 
 .info-text {
   text-align: justify;
   padding-left: 1em;
   max-width: 400px;
+}
+.nav h1 {
+  font-family: ‘Hurricane’, cursive;
+  font-size: 48px;
+  color: #966900;
+}
+.Theme-Park {
+  /* font-family: ‘Hurricane’, cursive; */
+  font-size: 24px;
 }

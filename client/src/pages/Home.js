@@ -8,9 +8,9 @@ function Home(props) {
 
     return (
         <div>
-            <h1> Welcome to our page </h1>
+            <h1> Welcome to Disney World!</h1>
             <div className='Theme-Park'>
-                <h2>Theme Parks</h2>
+                {/* <h2>Disney World Theme Parks</h2> */}
                 <div className='container-grid'>
                     {props.themeParks.map((themePark) => (
                         <ThemePark 

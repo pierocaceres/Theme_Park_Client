@@ -6,7 +6,6 @@ function ThemePark(props) {
    let {name} = useParams() 
 
    const themePark = props.themeParks.find((result) => name === result.name)
-   console.log(themePark)
    
     return (
         <div className="info">
@@ -15,9 +14,9 @@ function ThemePark(props) {
                 <img src={themePark.image} alt="themePark"/>
             </div>
             <div className="info-text">
-                 <h1> {themePark.name} </h1>
-                 <h4> { themePark.location}</h4>
-                 <p> {themePark.description}</p>
+                 <h1>{themePark.name} </h1>
+                 <h4>{themePark.location}</h4>
+                 <p>{themePark.description}</p>
             </div>
         </div>
     );

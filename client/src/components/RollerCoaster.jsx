@@ -3,10 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 
 const RollerCoaster = (props) => {
-
     let navigate = useNavigate()
                 
-
     return (
         <div className="container-grid">
             {/* <h2>Roller Coaster</h2> */}

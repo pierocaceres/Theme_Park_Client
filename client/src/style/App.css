@@ -47,3 +47,18 @@ header nav a {
   grid-gap: 1em;
   justify-content: center;
 }
+
+.info{
+  display: flex;
+  justify-content: center;
+}
+
+.info-picture img {
+  max-height: 400px;
+}
+
+.info-text {
+  text-align: justify;
+  padding-left: 1em;
+  max-width: 400px;
+}

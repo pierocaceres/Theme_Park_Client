@@ -1,9 +1,7 @@
 import React from 'react';
-import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
 import ThemePark from '../components/ThemePark'
-import RollerCoaster from '../components/RollerCoaster'
+
 
 function Home(props) {
     let navigate = useNavigate()
@@ -22,19 +20,7 @@ function Home(props) {
                         />
                     ))}
                 </div>
-            </div>
-            <div className='Roller-Coaster'>
-                {/* <h2>Roller Coaster</h2>
-                <div className="container-grid">
-                   {props.rollerCoasters.map((rollerCoaster) => (
-                       <RollerCoaster 
-                            image={rollerCoaster.image}
-                            name={rollerCoaster.name}
-                            onClick={() => navigate(`/rollercoaster/${rollerCoaster.name}`)}
-                       />
-                   ))}
-                </div> */}
-            </div>         
+            </div>        
         </div>
     );
 }

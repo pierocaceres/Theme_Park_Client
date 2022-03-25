@@ -5,7 +5,6 @@ function RollerCoaster(props) {
     let {name} = useParams() 
 
     const rollerCoaster = props.rollerCoasters.find((result) => name === result.name)
-    //console.log(rollerCoaster.type)
 
     return (
         <div className="info-coaster">

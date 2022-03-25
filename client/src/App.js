@@ -10,6 +10,8 @@ import RCData from './data/rollerCoasterData'
 import ThemeParkPage from './pages/ThemeParkPage';
 import RollerCoasterPage from './pages/RollerCoasterPage';
 
+const BASE_URL = 'http://localhost:3001/api'
+
 function App() {
   const [themeParks, setThemeParks] = useState([])
   const [rollerCoasters, setRollerCoaster] = useState([])
@@ -17,13 +19,14 @@ function App() {
   let navigate = useNavigate()
 
   const getThemePark = async () => {
-    // const result = await axios.get()
+    // const result = await axios.get(`${BASE_URL}/theme-parks`)
+    // console.log(result)
     // setThemeParks(result)   
     setThemeParks(TPData)
   }
 
   const getRollerCoaster = async () => {
-    // const result = await axios.get()
+    // const result = await axios.get(`${BASE_URL}/roller-coasters`)
     // setRollerCoaster(result)//Look at result path
     setRollerCoaster(RCData)
   }

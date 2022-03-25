@@ -43,7 +43,8 @@ header nav a {
 .container-grid {
   padding: 2em 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 320px);
+  /* grid-template-columns: repeat(auto-fill, 320px); */
+  grid-template-columns: repeat(4, 320px);
   grid-gap: 1em;
   justify-content: center;
 }
@@ -53,7 +54,8 @@ header nav a {
   justify-content: center;
 }
 
-.info-picture img {
+.info-picture img{
+  /* width: 100%; */
   max-height: 400px;
 }
 

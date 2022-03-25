@@ -30,6 +30,7 @@ function Home(props) {
                        <RollerCoaster 
                             image={rollerCoaster.image}
                             name={rollerCoaster.name}
+                            onClick={() => navigate(`/rollercoaster/${rollerCoaster.name}`)}
                        />
                    ))}
                 </div>

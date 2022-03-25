@@ -1,6 +1,7 @@
 import './style/App.css';
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import Navigation from './components/Navigation'
+import RollerCoaster from './components/RollerCoaster';
 import Home from './pages/Home'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -42,8 +43,9 @@ function App() {
       <main>
         <Routes>
           <Route exact path="/" element={<Home themeParks={themeParks} rollerCoasters={rollerCoasters} />}/>
+          <Route path="/rollercoasters" element={<RollerCoaster rollerCoasters={rollerCoasters}/>}/>
           <Route exact path="/themeparks/:name" element={ <ThemeParkPage themeParks = {themeParks} />} />
-          <Route exact path="/rollercoaster/:name" element={ <RollerCoasterPage rollerCoasters={rollerCoasters} />
+          <Route exact path="/rollercoasters/:name" element={ <RollerCoasterPage rollerCoasters={rollerCoasters} />
           } />
         </Routes> 
        

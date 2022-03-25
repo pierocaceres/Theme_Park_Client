@@ -24,7 +24,7 @@ function Home(props) {
                 </div>
             </div>
             <div className='Roller-Coaster'>
-                <h2>Roller Coaster</h2>
+                {/* <h2>Roller Coaster</h2>
                 <div className="container-grid">
                    {props.rollerCoasters.map((rollerCoaster) => (
                        <RollerCoaster 
@@ -33,7 +33,7 @@ function Home(props) {
                             onClick={() => navigate(`/rollercoaster/${rollerCoaster.name}`)}
                        />
                    ))}
-                </div>
+                </div> */}
             </div>         
         </div>
     );

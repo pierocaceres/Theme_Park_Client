@@ -19,7 +19,6 @@ function ThemePark(props) {
                  <h4> { themePark.location}</h4>
                  <p> {themePark.description}</p>
             
-            
             </div>
 
         </div>

@@ -9,6 +9,7 @@ import axios from 'axios';
 import TPData from './data/themeParkData'
 import RCData from './data/rollerCoasterData'
 import ThemeParkPage from './pages/ThemeParkPage';
+import RollerCoasterPage from './pages/RollerCoasterPage';
 
 function App() {
   const [themeParks, setThemeParks] = useState([])
@@ -44,7 +45,9 @@ function App() {
          <Routes>
           <Route exact path="/" element={<Home themeParks={themeParks} rollerCoasters={rollerCoasters} />}/>
           <Route exact path="/themeparks/:name" element={ <ThemeParkPage themeParks = {themeParks} />}  />
-          <Route exact path="/rollercoasters/:name"  />
+          <Route exact path="/rollercoaster/:name" element={
+          <RollerCoasterPage rollerCoasters = { rollerCoasters } />
+          } />
         </Routes> 
        
       </main>   

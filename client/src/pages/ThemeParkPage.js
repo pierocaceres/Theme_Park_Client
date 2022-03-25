@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Review from '../components/Review';
 
 
 function ThemePark(props) {
@@ -17,6 +18,7 @@ function ThemePark(props) {
                  <h1>{themePark.name} </h1>
                  <h4>{themePark.location}</h4>
                  <p>{themePark.description}</p>
+                 <Review />
             </div>
         </div>
     );

@@ -12,15 +12,18 @@ function Review(props) {
     }
 
     const getReview = () => {
-        setSendReview(...sendReview, userReview)
-        //axios.push("URL", sendReview)
-        console.log(sendReview)
+        if(userReview !== ""){
+            let review = {comment : ""}
+            review.comment = userReview
+            setSendReview(sendReview => [...sendReview, review])
+            //axios.push("URL", sendReview)
+        }
     }
 
     return (
         <div>
             <input type="text" name="review" placeholder="Leave your review" value={userReview} onChange={(event) => handleReview(event)}/>
-            <button onClick={getReview}>Submit</button>
+            <button onClick={() => getReview()}>Submit</button>
         </div>
     );
 }

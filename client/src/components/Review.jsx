@@ -4,26 +4,26 @@ import axios from 'axios'
 
 function Review(props) {
     
+    const [reviews, setReviews] = useState([])
+    const [sendReviews, setSendReviews] = useState({comment: [...reviews]})
     const [userReview, setUserReview] = useState('')
-    const [sendReview, setSendReview] = useState([])
+    const getReviews = () => {
+        if (userReview !== '') {
+            let newReviews =  [...reviews, userReview]
+            setReviews(newReviews)
+            setSendReviews({comment: [...reviews]})
+            console.log(sendReviews)
+        }
+    }
 
     const handleReview = (event) => {
         setUserReview(event.target.value)
     }
 
-    const getReview = () => {
-        if(userReview !== ""){
-            let review = {comment : ""}
-            review.comment = userReview
-            setSendReview(sendReview => [...sendReview, review])
-            //axios.push("URL", sendReview)
-        }
-    }
-
     return (
         <div>
             <input type="text" name="review" placeholder="Leave your review" value={userReview} onChange={(event) => handleReview(event)}/>
-            <button onClick={() => getReview()}>Submit</button>
+            <button onClick={() => getReviews()}>Submit</button>
         </div>
     );
 }

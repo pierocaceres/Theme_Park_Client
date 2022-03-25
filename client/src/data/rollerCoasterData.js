@@ -5,7 +5,7 @@ export default [
         min_height: '40 in',
         max_speed: '36 mph',
         length: '2671 ft',
-        type: ['Thrill Ride', 'Small Drops'],
+        type: ['Thrill Ride ',  'Small Drops'],
         image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ZOjWf9F1YiNaU5bXV6YVHwHaEi%26pid%3DApi&f=1',
         //location: magicKingdom[0]._id
     },
@@ -15,7 +15,7 @@ export default [
         min_height: '38 in',
         max_speed: '34 mph',
         length: '2000 ft',
-        type: ['Thrill Ride', 'Small Drops'],
+        type: ['Thrill Ride ', 'Small Drops'],
         image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.VqmlCRzdwBZgSVuKDUf6ggHaFj%26pid%3DApi&f=1',
         //location: magicKingdom[0]._id
     },
@@ -25,7 +25,7 @@ export default [
         min_height: '44 in',
         max_speed: '27 mph',
         length: '3186 ft',
-        type: ['Thrill Ride', 'Big Drops', 'Dark'],
+        type: ['Thrill Ride ', 'Big Drops ', 'Dark'],
         image: 'https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/630/354/75/dam/wdpro-assets/parks-and-tickets/attractions/magic-kingdom/space-mountain/space-mountain-00.jpg?1559892391044',
         //location: magicKingdom[0]._id
     },
@@ -35,7 +35,7 @@ export default [
         min_height: '40 in',
         max_speed: '39 mph',
         length: '2600 ft',
-        type: ['Thrill Ride', 'Water Ride', 'Big Drops'],
+        type: ['Thrill Ride ', 'Water Ride ', 'Big Drops'],
         image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.cVSUT5XRrvs9ra3Yk9km1QHaE8%26pid%3DApi&f=1',
         //location: magicKingdom[0]._id
     },
@@ -45,7 +45,7 @@ export default [
         min_height: '40 in',
         max_speed: '65 mph',
         length: '',
-        type: ['Thrill Ride', 'Small Drops'],
+        type: ['Thrill Ride ', 'Small Drops'],
         image: 'https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/parks-and-tickets/attractions/epcot/test-track/test-track-presented-by-chevrolet-00.jpg?1634619823087',
         //location: epcot[0]._id
     },
@@ -55,7 +55,7 @@ export default [
         min_height: '48 in',
         max_speed: '57 mph',
         length: '3268 ft',
-        type: ['Thrill Ride', 'Big Drops'],
+        type: ['Thrill Ride ', 'Big Drops'],
         image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdisneydiary.com%2Fwp-content%2Fuploads%2F2019%2F07%2FRocknrollercoaster.jpg&f=1&nofb=1',
         //location: hollywoodStudios[0]._id
     },
@@ -65,7 +65,7 @@ export default [
         min_height: '38 in',
         max_speed: '40 mph',
         length: '1357 ft',
-        type: ['Thrill Ride', 'Small Drops'],
+        type: ['Thrill Ride ', 'Small Drops'],
         image: 'https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/disney-world/destinations/hollywood-studios/toy-story-land/toy-story-slinky-dog-ride-16x9.jpg?1637954514038',
         //location: hollywoodStudios[0]._id
     },
@@ -75,7 +75,7 @@ export default [
         min_height: '40 in' ,
         max_speed: '39 mph',
         length: '',
-        type: ['Thrill Ride', 'Big Drops'],
+        type: ['Thrill Ride ', 'Big Drops'],
         image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.R71nJqPMxK5P_Tu2NLTyjQHaEK%26pid%3DApi&f=1',
         //location: hollywoodStudios[0]._id
     },
@@ -85,7 +85,7 @@ export default [
         min_height: '44 in',
         max_speed: '50 mph',
         length: '3884 ft',
-        type: ['Thrill Ride', 'Big Drops'],
+        type: ['Thrill Ride ', 'Big Drops'],
         image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.a4NRH8TVw7Datc7SpSkDEwHaFj%26pid%3DApi&f=1',
         //location: animalKingdom[0]._id
     }

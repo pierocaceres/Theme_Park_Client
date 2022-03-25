@@ -5,10 +5,10 @@ const Navigation = () => {
     
     return (
         <nav className="nav" >
-            <h1> Disney Parks in Florida </h1>
-            <div>
-                <Link to="/"> Home </Link>
-                <Link to="/rollercoasters"> Coasters </Link>
+            <h1> Disney World Florida </h1>
+            <div className="link-button">
+                <button><Link to="/"> Home </Link></button>
+                <button><Link to="/rollercoasters"> Coasters </Link></button>
             </div>    
         </nav>
     );
